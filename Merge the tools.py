@@ -6,6 +6,6 @@ def merge_the_tools(string, k):
             if s not in sub:
                 sub += s;
         print(sub);
-
+# MErging the tools problem
 s,k=input(),int(input())
 merge_the_tools(s,k)
