@@ -11,7 +11,7 @@ shape = (int(sys.argv[2]), int(sys.argv[2]))
 if device_name == "gpu":
     device_name = "/gpu:0"
 else:
-    device_name = "/cpu:0"
+    device_name = "/cpu:0" # check CPU
 
 with tf.device(device_name):
     random_matrix = tf.random.uniform(shape=shape, minval=0, maxval=1)
